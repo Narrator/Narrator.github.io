@@ -12,10 +12,10 @@
     <title>IGSHPA | International Ground Source Heat Pump Association</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/vendor/bootstrap.min.css" rel="stylesheet">
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <link href="css/vendor/ie10-viewport-bug-workaround.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -24,8 +24,9 @@
     <![endif]-->
 
     <!-- Custom styles for this template -->
-    <link rel="stylesheet" href="css/lib/font-awesome/css/font-awesome.min.css">
-    <link href="css/carousel.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/fonts/font-awesome/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
   </head>
 <!-- NAVBAR
 ================================================== -->
@@ -34,15 +35,15 @@
       <div class="masthead">
         <div class="container">
           <div class="row">
-            <div class="col-lg-6">
+            <div class="col-sm-6">
               <a class="navbar-brand" href="#">
                 <span><img alt="Brand" src="img/igshpa-logo.png"></span>
               </a>
-              <h3 class="hidden-xs navbar-text">
-                INTERNATIONAL GROUND SOURCE HEAT PUMP ASSOCIATION
-              </h3>
+              <h2 class="hidden-xs navbar-text">
+                International Ground Source Heat Pump Association
+              </h2>
             </div>
-            <div class="col-lg-6">
+            <div class="col-sm-6">
               <div class="row">
                 <form class="navbar-form search" role="search">
                   <div class="input-group">
@@ -57,10 +58,10 @@
               </div>
               <div class="row">
                 <div class="header-social social-media-icons">
-                  <i class="fa fa-twitter-square social-media" aria-hidden="true"></i>
-                  <i class="fa fa-facebook-square social-media" aria-hidden="true"></i>
-                  <i class="fa fa-youtube-square social-media" aria-hidden="true"></i>
-                  <i class="fa fa-google-plus-square social-media" aria-hidden="true"></i>
+                  <i class="fa fa-twitter social-media" aria-hidden="true"></i>
+                  <i class="fa fa-facebook social-media" aria-hidden="true"></i>
+                  <i class="fa fa-youtube social-media" aria-hidden="true"></i>
+                  <i class="fa fa-google-plus-official social-media" aria-hidden="true"></i>
                 </div>
               </div>
             </div>
@@ -93,6 +94,7 @@
                     <li><a href="#">Advisory Council and Committee Chairs</a></li>
                     <li><a href="#">Meet the Staff</a></li>
                     <li><a href="#">Contact Us</a></li>
+                    <li class="1200-responsive"><a href="#contact">Research</a></li>
                   </ul>
                 </li>
                 <li class="dropdown fill-width">
@@ -125,7 +127,7 @@
                   </ul>
                 </li>
                 <li><a href="#contact">Conference</a></li>
-                <li><a href="#contact">Research</a></li>
+                <li class="xl-responsive"><a href="#contact">Research</a></li>
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Membership <span class="caret"></span></a>
                   <ul class="dropdown-menu">
@@ -139,6 +141,7 @@
                     <i class="fa fa-external-link" aria-hidden="true"></i></a></li>
                     <li role="separator" class="divider"></li>
                     <li><a href="#">Members Login</a></li>
+                    <li class="1200-responsive"><a href="#contact">Business Directory</a></li>
                   </ul>
                 </li>
                 <li class="dropdown">
@@ -157,13 +160,13 @@
                     <li><a href="#">Downloadable Forms</a></li>
                   </ul>
                 </li>
-                <li><a href="#contact">Business Directory</a></li>
+                <li class="xl-responsive"><a href="#contact">Business Directory</a></li>
               </ul>
               <div class="navbar-social social-media-icons">
-                <i class="fa fa-twitter-square social-media" aria-hidden="true"></i>
-                <i class="fa fa-facebook-square social-media" aria-hidden="true"></i>
-                <i class="fa fa-youtube-square social-media" aria-hidden="true"></i>
-                <i class="fa fa-google-plus-square social-media" aria-hidden="true"></i>
+                <i class="fa fa-twitter social-media" aria-hidden="true"></i>
+                <i class="fa fa-facebook social-media" aria-hidden="true"></i>
+                <i class="fa fa-youtube social-media" aria-hidden="true"></i>
+                <i class="fa fa-google-plus-official social-media" aria-hidden="true"></i>
               </div>
             </div>
           </div>
@@ -176,33 +179,6 @@
     ================================================== -->
     <div class="main-content">
       <div class="featured-wrapper">
-        <div class="container">
-          <!--<div class="featured-main row">
-            <div class="col-lg-6">
-              <div class="featured left row">
-                <img src="img/carousel/main.jpg" alt="">
-              </div>
-              <div class="featured left top row">
-                <img src="img/carousel/2.jpg" alt="">
-              </div>
-              <div class="featured popup left bottom row">
-                <img src="img/carousel/5.png" alt="">
-                  <div class="featured-caption">
-                    <p>
-                      What is a ground source heat pump?
-                    </p>
-                  </div>
-              </div>
-            </div>
-            <div class="col-lg-6">
-              <div class="featured right top row">
-                <img src="img/carousel/2.jpg" alt="">
-              </div>
-              <div class="featured right bottom row">
-                <img src="img/carousel/3.png" alt="">
-              </div>
-            </div>
-          </div>-->
           <div id="myCarousel" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
               <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -211,7 +187,7 @@
             </ol>
             <div class="carousel-inner" role="listbox">
               <div class="item active">
-                <img class="first-slide" src="img/carousel/main.png" alt="First slide">
+                <img class="first-slide" src="img/carousel/carousel.jpg" alt="First slide">
                 <div class="container">
                   <div class="carousel-caption">
                   </div>
@@ -241,19 +217,53 @@
               <span class="sr-only">Next</span>
             </a>
           </div>
+      </div>
+
+      <div class="fluid-featured">
+        <div class="container">
+          <div  class="row">
+            <div class="col-sm-4 left fluid-box">
+              <div class="wpb_wrapper">
+                <div class="king-elements ">
+                  <i class="fa fa-user-plus element-icon "></i><h1>Find Accredited</h1>
+                  <h2 class="white">Member Information</h2><a target="_blank" href="" class=""><i class="fa fa-caret-right"></i> GET STARTED</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4 center fluid-box">
+              <div class="wpb_wrapper">
+                <div class="king-elements ">
+                  <i class="fa fa-question element-icon "></i><h1>Frequently Asked</h1>
+                  <h2 class="white">Questions</h2><a target="_blank" href="" class=""><i class="fa fa-caret-right"></i> GET STARTED</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4 right fluid-box">
+              <div class="wpb_wrapper">
+                <div class="king-elements ">
+                  <i class="fa fa-sign-in element-icon "></i><h1>Members Portal</h1>
+                  <h2 class="white">Login</h2><a target="_blank" href="" class=""><i class="fa fa-caret-right"></i> GET STARTED</a>
+                </div>
+              </div>
+            </div>
+            <div class="clear">
+            </div>
+          </div>
         </div>
       </div>
 
       <div class="mid">
         <div class="container">
           <div class="mid-row row">
-            <div class="about-us col-lg-12">
+            <div class="about-us col-sm-12">
               <div class="intro row">
-                <h2>What is IGSHPA?</h2>
-                  <p>
-                    The International Ground Source Heat Pump Association (IGSHPA) is a non-profit, member-driven organization established in 1987 to advance ground source heat pump (GSHP) technology on local, state, national and international levels. Headquartered on the campus of Oklahoma State University in Stillwater, Oklahoma, IGSHPA utilizes state-of-the-art facilities for conducting GSHP system installation training and geothermal research. With its access to the most current advancements in the geothermal industry, IGSHPA is the ideal bridge between the latest technology and the people who benefit from these developments.
+                <h2 class="text-center">IGSHPA is the ideal bridge between the latest technology and the people who benefit from these developments.</h2>
+                  <p class="normal text-center">
+                    The International Ground Source Heat Pump Association (IGSHPA) is a non-profit, member-driven organization established in 1987 to advance ground source heat pump (GSHP) technology on local, state, national and international levels. IGSHPA utilizes state-of-the-art facilities for conducting GSHP system installation training and geothermal research.
                   </p>
-                  <a href="#" class="btn btn-lg btn-all btn-default">Read More</a>
+                  <p class="text-center">
+                    <a href="#" class="btn btn-lg btn-all"><strong>Learn More</strong></a>
+                  </p>
               </div>
             </div>
           </div>
@@ -263,26 +273,28 @@
       <div class="promotion mid">
         <div class="container">
           <div class="mid-row row">
-            <div class="left col-lg-5">
+            <div class="left col-sm-4">
               <div class="row">
                 <div  class="image-cropper">
                   <img src="img/mid1.png" alt="">
                 </div>
               </div>
             </div>
-            <div class="right col-lg-7">
+            <div class="right col-sm-8">
               <div class="right-box">
                 <h2>Geo Outlook Magazine</h2>
-                <p>
+                <p class="large">
                   Geo Outlook is published quarterly by Oklahoma State University and the International Ground Source Heat Pump Association
                 </p>
-                <p>
+                <p class="large">
                 Geo Outlook magazine reaches thousands of industry professionals each quarter, including installers, drillers, trainers, manufacturers and engineers. Advertise with us to get your products and/or services the exposure they need in the HVAC community.
                 </p>
-                <p>
+                <p class="large">
                   Send questions, story ideas, photos and comments to <a href="">igshpa@okstate.edu</a> or call 800-626-4747
                 </p>
-                <p><a href="#" class="btn btn-lg btn-all btn-default">Read More</a></p>
+                <p class="button">
+                  <a href="#" class="btn btn-lg btn-all btn-default inverse">Learn More</a>
+                </p>
               </div>
             </div>
           </div>
@@ -292,19 +304,19 @@
       <div class="mid">
         <div class="container">
           <div class="mid-row row">
-            <div class="geothermal col-lg-7">
+            <div class="geothermal col-sm-8">
               <div class="left-box">
                 <h2>What is a ground source heat pump?</h2>
-                <p>
+                <p class="large">
                   Ground source heat pumps (GSHPs) are electrically powered systems that tap the stored energy of the greatest solar collector in existence: the earth. These systems use the earth's relatively constant temperature to provide heating, cooling, and hot water for homes and commercial buildings.
                 </p>
-                <p>
+                <p class="large">
                   The US Environmental Protection Agency (EPA) has called ground source heat pumps the most energy-efficient, environmentally clean, and cost-effective space conditioning systems available
                 </p>
-                <p><a href="#" class="btn btn-lg btn-all btn-default">Read More</a></p>
+                <p><a href="#" class="btn btn-lg btn-all btn-default">learn more</a></p>
               </div>
             </div>
-            <div class="geothermal col-lg-5">
+            <div class="geothermal col-sm-4">
               <div class="row">
                 <div class="image-cropper">
                   <img src="img/geo.jpg">
@@ -324,24 +336,27 @@
 
           <!-- Three columns of text below the carousel -->
           <div class="interactive row">
-            <div class="featurette col-lg-4">
+            <div class="featurette col-sm-4">
               <img src="img/member.png">
-              <h3>Become a Member</h3>
-              <p>When you join IGSHPA, you are networked with the industry's leading experts and authorities</p>
-              <p><a href="#" class="btn btn-lg btn-all btn-default">Read More</a></p>
-            </div><!-- /.col-lg-4 -->
-            <div class="featurette col-lg-4">
+              <h2 class="text-center">Become a Member</h2>
+              <p class="text-center large xl-responsive">When you join IGSHPA, you are networked with the industry's leading experts and authorities</p>
+              <p class="text-center normal 1200-responsive">When you join IGSHPA, you are networked with the industry's leading experts and authorities</p>
+              <p class="text-center"><a href="#" class="btn btn-lg btn-all btn-default member">Join now</a></p>
+            </div><!-- /.col-sm-4 -->
+            <div class="featurette col-sm-4">
               <img src="img/proffesional.png">
-              <h3>Find a Professional</h3>
-              <p>IGSHPA encourages the employment of accredited, experienced installers, designers, and contractors</p>
-              <p><a href="#" class="btn btn-lg btn-all btn-default">Read More</a></p>
-            </div><!-- /.col-lg-4 -->
-            <div class="featurette col-lg-4">
+              <h2 class="text-center">Find a Professional</h2>
+              <p class="text-center large xl-responsive">IGSHPA encourages the employment of accredited, experienced installers, designers, and contractors</p>
+              <p class="text-center normal 1200-responsive">IGSHPA encourages the employment of accredited, experienced installers, designers, and contractors</p>
+              <p class="text-center"><a href="#" class="btn btn-lg btn-all btn-default professional">Find one</a></p>
+            </div><!-- /.col-sm-4 -->
+            <div class="featurette col-sm-4">
               <img src="img/training.png">
-              <h3>Training</h3>
-              <p>IGSHPA training is the best way to learn accepted standards and procedures and the best way to get ahead in the industry</p>
-              <p><a href="#" class="btn btn-lg btn-all btn-default">Read More</a></p>
-            </div><!-- /.col-lg-4 -->
+              <h2 class="text-center">Training</h2>
+              <p class="text-center large xl-responsive">IGSHPA training is the best way to learn accepted standards and procedures and the best way to get ahead in the industry</p>
+              <p class="text-center normal 1200-responsive">IGSHPA training is the best way to learn accepted standards and procedures and the best way to get ahead in the industry</p>
+              <p class="text-center"><a href="#" class="btn btn-lg btn-all btn-default training">Get details</a></p>
+            </div><!-- /.col-sm-4 -->
           </div><!-- /.row -->
         </div><!-- /.container -->
       </div>
@@ -351,36 +366,36 @@
         <h2>What's Coming up</h2>
           <!-- Three columns of text below the carousel -->
           <div class="interactive row">
-            <div class="featurette col-lg-4">
+            <div class="featurette col-sm-4">
               <div class="calendar-holder">
                  <img src="img/cgi.jpg" alt="" />
                   <span>
                     <a href="">Jan <strong>18</strong> 2016</a></span>
-                  <h4>Certified Geothermal Inspector</h4>
-                  <p>Jan 18-19, 2017 - <a href="">Stillwater, OK</a></p>
-                  <p><a href="#" class="btn btn-lg btn-all btn-default">Enroll Today</a></p>
+                  <h4 class="text-center">Certified Geothermal Inspector</h4>
+                  <p class="text-center normal">Jan 18-19, 2017 - <a href="">Stillwater, OK</a></p>
+                  <p class="text-center"><a href="#" class="btn btn-lg btn-all btn-default inverse"><i class="fa fa-calendar" aria-hidden="true"></i> Enroll</a></p>
               </div>
-            </div><!-- /.col-lg-4 -->
-            <div class="featurette col-lg-4">
+            </div><!-- /.col-sm-4 -->
+            <div class="featurette col-sm-4">
               <div class="calendar-holder">
                  <img src="img/aiw.jpg" alt="" />
                   <span>
                     <a href="">Jan <strong>25</strong> 2016</a></span>
-                  <h4>Accredited Installer Workshop</h4>
-                  <p>Jan 25-27, 2017 - <a href="">Stillwater, OK</a></p>
-                  <p><a href="#" class="btn btn-lg btn-all btn-default">Enroll Today</a></p>
+                  <h4 class="text-center">Accredited Installer Workshop</h4>
+                  <p class="text-center normal">Jan 25-27, 2017 - <a href="">Stillwater, OK</a></p>
+                  <p class="text-center"><a href="#" class="btn btn-lg btn-all btn-default inverse"><i class="fa fa-calendar" aria-hidden="true"></i> Enroll</a></p>
               </div>
-            </div><!-- /.col-lg-4 -->
-            <div class="featurette col-lg-4">
+            </div><!-- /.col-sm-4 -->
+            <div class="featurette col-sm-4">
               <div class="calendar-holder">
                  <img src="img/cgi.jpg" alt="" />
                   <span>
                     <a href="">Feb <strong>18</strong> 2016</a></span>
-                  <h4>Certified Geothermal Inspector</h4>
-                  <p>Feb 9-10, 2017 - <a href="">Stillwater, OK</a></p>
-                  <p><a href="#" class="btn btn-lg btn-all btn-default">Enroll Today</a></p>
+                  <h4 class="text-center">Certified Geothermal Inspector</h4>
+                  <p class="text-center normal">Feb 9-10, 2017 - <a href="">Stillwater, OK</a></p>
+                  <p class="text-center"><a href="#" class="btn btn-lg btn-all btn-default inverse"><i class="fa fa-calendar" aria-hidden="true"></i> Enroll</a></p>
               </div>
-            </div><!-- /.col-lg-4 -->
+            </div><!-- /.col-sm-4 -->
           </div><!-- /.row -->
         </div><!-- /.container -->
       </div>
@@ -391,10 +406,86 @@
       <footer>
         <div class="first-footer">
           <div class="container">
+            <div class="row">
+              <div class="col-sm-3">
+                <h4 class="white"><strong>About us</strong></h4>
+                <ul>
+                  <li><a href="#">What is IGSHPA?</a></li>
+                  <li><a href="#">Constitution and Bylaws</a></li>
+                  <li><a href="#">Board of Directors</a></li>
+                  <li><a href="#">Advisory Council and Committee Chairs</a></li>
+                  <li><a href="#">Meet the Staff</a></li>
+                  <li><a href="#">Contact Us</a></li>
+                </ul>
+              </div>
+              <div class="col-sm-3">
+                <h4 class="white"><strong>Geothermal</strong></h4>
+                <ul>
+                  <li><a href="#">What is a ground source heat pump?</a></li>
+                  <li><a href="#">Residential</a></li>
+                  <li><a href="#">Commercial</a></li>
+                  <li><a href="#">Frequently Asked Questions</a></li>
+                  <li><a href="#">Earth Insights (Technical)</a></li>
+                  <li><a href="#">Links</a></li>
+                </ul>
+              </div>
+              <div class="col-sm-3">
+                <h4 class="white"><strong>Training</strong></h4>
+                  <ul>
+                    <li><a href="#">Corporate Membership</a></li>
+                    <li><a href="#">Individual Membership</a></li>
+                    <li><a href="#">How To Join</a></li>
+                    <li><a href="#">Chapters</a></li>
+                    <li><a href="#">Find a Member</a></li>
+                    <li><a href="#">IGSHPA Connect
+                    <i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+                    <li><a href="#">Members Login</a></li>
+                  </ul>
+              </div>
+              <div class="search-footer col-sm-3">
+                <div class="search-footer">
+                  <form class="search" role="search">
+                    <div class="input-group">
+                      <input type="search" class="form-control" placeholder="Search" name="srch-term" id="srch-term">
+                      <div class="input-group-btn">
+                        <button class="btn btn-default" type="submit">
+                          <i class="glyphicon glyphicon-search"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <div class="quick-footer">
+                  <p class="white text-center">
+                    <a alt="Find a professional" href=""><i class="fa fa-globe left"></i></a>
+                    <a href=""><i class="fa fa-user-plus"></i></a>
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div class="second-footer">
           <div class="container">
+            <div class="row">
+              <div class="col-sm-6">
+                <a href=""><img class="osu" src="img/okstate.png"></a>
+              </div>
+              <div class="col-sm-6">
+                <a href=""><img class="igshpa" src="img/igshpa.png"></a>
+              </div>
+            </div>
+            <div class="second row">
+              <p class="white text-center">
+                <a href="">Privacy Policy</a>
+              </p>
+              <p class="white text-center">
+                © 2016 The Board of Regents for Oklahoma State University / International Ground Source Heat Pump Association (IGSHPA)
+              </p>
+              <h2 class="white text-center">International Ground Source Heat Pump Association</h2>
+              <p class="white text-center"><i class="fa fa-map-marker"></i> 1201 S Innovation Way, Suite 400, Stillwater, OK 74074</p>
+              <p class="white text-center"><i class="fa fa-paper-plane"></i> Email: igshpa@okstate.edu | <i class="fa fa-phone"></i> Phone: 1(800) 626-4747</p>
+            </div>
           </div>
         </div>
       </footer>
