@@ -792,11 +792,11 @@ footer .quick-footer i.left {
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 
-li.1200-responsive {
+li.l-responsive {
   display:none;
 }
 
-p.1200-responsive {
+p.l-responsive {
   display:none;
 }
 
@@ -805,10 +805,10 @@ p.1200-responsive {
     font-size:30px;
   }
 
-  li.1200-responsive {
+  li.l-responsive {
     display:block;
   }
-  p.1200-responsive {
+  p.l-responsive {
     display:block;
   }
   p.xl-responsive {
