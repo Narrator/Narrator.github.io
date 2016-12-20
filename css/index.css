@@ -180,7 +180,7 @@ a:hover, a:focus, a:active {
 
 /* Declare heights because of positioning of img element */
 .carousel .item {
-  min-height:250px;
+  min-height:200px;
   width:100%;
   color: #426746;
   overflow:hidden;
@@ -1047,6 +1047,22 @@ li.m-responsive {
   .second-footer img.igshpa {
     width:108.75px;
     margin-left:25px;
+  }
+}
+
+@media (max-width: 500px) {
+  .fluid-featured i {
+    font-size:60px;
+    margin-bottom:12px;
+  }
+  .fluid-featured h1 {
+    font-size: 25px;
+    line-height: 25px;
+  }
+  .fluid-featured h2 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 5px;
   }
 }
 

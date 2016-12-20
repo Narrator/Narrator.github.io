@@ -521,7 +521,7 @@
           return 100 - widthWithScroll;
       };
       var browserWidth = $(window).width();
-      var carouselHeight = 30/100 * browserWidth;
+      var carouselHeight = 25/100 * browserWidth;
       $(".carousel .item").css("height",carouselHeight);
       $(".carousel").carousel({
           interval: false
@@ -601,7 +601,7 @@
       });
       $(window).resize(function() {
         browserWidth = $(window).width();
-        carouselHeight = 30/100 * browserWidth;
+        carouselHeight = 25/100 * browserWidth;
         $(".carousel .item").css("height",carouselHeight);
         var sWidth = getScrollBarWidth();
         var wThreshold2 = 992 - sWidth;
