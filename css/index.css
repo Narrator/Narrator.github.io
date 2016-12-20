@@ -180,16 +180,19 @@ a:hover, a:focus, a:active {
 
 /* Declare heights because of positioning of img element */
 .carousel .item {
-  height: 40%;
+  min-height:250px;
   width:100%;
   color: #426746;
+  overflow:hidden;
 }
 .carousel-inner > .item > img {
   position: relative;
   top: 0;
   left: 0;
   min-width: auto;
-  /*height: 100%;*/
+  height: 100%;
+  max-width:100%;
+  max-height:100%;
   margin-left:auto;
   margin-right:auto;
 }
@@ -798,9 +801,6 @@ li.m-responsive {
 }
 
 @media (max-width: 1200px) {
-  /*.carousel .item {
-    height: 450px;
-  }*/
   .fluid-featured h1 {
     font-size:30px;
   }
@@ -832,9 +832,6 @@ li.m-responsive {
 }
 
 @media (max-width: 992px) {
-  /*.carousel .item {
-    height: 400px;
-  }*/
   li.m-responsive {
     display:block;
   }
@@ -911,8 +908,6 @@ li.m-responsive {
     padding-bottom:30px;
   }
 
-
-
   .calendar-holder img {
     max-height: 100%;
     max-width: 100%;
@@ -920,16 +915,41 @@ li.m-responsive {
   }
 }
 
-@media (max-width: 900px) {
-  /*.carousel .item {
-    height: 350px;
-  }*/
-}
 
 @media (max-width: 768px) {
-  /*.carousel .item {
-    height: 300px;
-  }*/
+  li.xl-responsive {
+    display:block;
+  }
+  li.m-unresponsive  {
+    display:block;
+  }
+  .navbar-brand img {
+    width: 0px;
+    height:auto;
+  }
+  h2.navbar-text {
+    width: 0px;
+    margin-top: 0px;
+    font-size:0em;
+  }
+  .header-social.social-media-icons {
+    display:none;
+  }
+  .masthead {
+    height:0px
+  }
+  .navbar-wrapper .navbar {
+    top:0px;
+  }
+  body {
+    padding-top:50px;
+  }
+  .navbar-social {
+    display:none;
+  }
+  li.brand-home {
+    display:none;
+  }
   .fluid-featured a {
     float: none;
     font-size: 13px;
@@ -1010,17 +1030,6 @@ li.m-responsive {
   }
 }
 
-@media (max-width: 650px) {
-  /*.carousel .item {
-    height: 250px;
-  }*/
-}
-
-@media (max-width: 525px) {
-  /*.carousel .item {
-    height: 200px;
-  }*/
-}
 
 @media (max-width: 475px) {
   .second-footer img.osu {
