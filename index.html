@@ -188,7 +188,7 @@
             </ol>
             <div class="carousel-inner" role="listbox">
               <div class="item active">
-                <img class="first-slide" src="img/carousel/carousel.jpg" alt="First slide">
+                <img class="first-slide" src="img/carousel/main.jpg" alt="First slide">
                 <div class="container">
                   <div class="carousel-caption">
                   </div>
@@ -277,7 +277,7 @@
             <div class="left col-md-4">
               <div class="row">
                 <div  class="image-cropper">
-                  <img src="img/mid1.png" alt="">
+                  <img src="img/mid2.png" alt="">
                 </div>
               </div>
             </div>
@@ -521,7 +521,7 @@
           return 100 - widthWithScroll;
       };
       var browserWidth = $(window).width();
-      var carouselHeight = 40/100 * browserWidth;
+      var carouselHeight = 30/100 * browserWidth;
       $(".carousel .item").css("height",carouselHeight);
       $(".carousel").carousel({
           interval: false
@@ -601,8 +601,8 @@
       });
       $(window).resize(function() {
         browserWidth = $(window).width();
-        carouselWidth = 40/100 * browserWidth;
-        $(".carousel .item").css("height",carouselWidth);
+        carouselHeight = 30/100 * browserWidth;
+        $(".carousel .item").css("height",carouselHeight);
         var sWidth = getScrollBarWidth();
         var wThreshold2 = 992 - sWidth;
         var wThreshold3 = 768 - sWidth;

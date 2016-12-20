@@ -465,6 +465,7 @@ h2.navbar-text {
   height:auto;
   transition: visibility 0s linear 0.4s,opacity 0.4s linear;
   -webkit-backface-visibility: hidden;
+  outline: 1px solid transparent;
 }
 
 /* Navbar Dropdown
@@ -922,6 +923,12 @@ li.m-responsive {
   }
   li.m-unresponsive  {
     display:block;
+  }
+  li.m-responsive {
+    display:none;
+  }
+  li.l-responsive {
+    display:none;
   }
   .navbar-brand img {
     width: 0px;
