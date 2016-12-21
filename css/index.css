@@ -1,3 +1,22 @@
+/*!
+ * IE10 viewport hack for Surface/desktop Windows 8 bug
+ * Copyright 2014-2015 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+
+@-ms-viewport {
+    width: device-width
+}
+
+@-o-viewport {
+    width: device-width
+}
+
+@viewport {
+    width: device-width
+}
+
+
 /* GLOBAL STYLES
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
@@ -1196,27 +1215,115 @@ li.m-responsive {
   }
 }
 
-*[id]:before {
-  display: block;
-  content: " ";
-  margin-top: -75px;
-  height: 75px;
-  visibility: hidden;
+/* SIDEBAR
+--------------------------*/
+
+.sidenav {
+    margin-top: 20px;
+    margin-bottom: 20px
 }
 
-/*.anchorjs-link {
-  font-family: anchorjs-icons;
-  font-style: normal;
-  font-variant-ligatures: normal;
-  font-variant-caps: normal;
-  font-weight: normal;
-  line-height: inherit;
-  position: absolute;
-  margin-left: -1em;
-  padding-right: 0.5em;
+.sidebar .nav>li>a {
+    display: block;
+    padding: 4px 20px;
+    font-weight: 500;
+    font-size:1em;
+    color: #5a5a5a;
 }
 
-a.anchorjs-link:focus, a.anchorjs-link:active {
-  text-decoration:none !important;
-}*/
+.sidebar .nav>li>a:focus,
+.sidebar .nav>li>a:hover {
+    padding-left: 19px;
+    color: #426746;;
+    text-decoration: none;
+    background-color: transparent;
+    border-left: 1px solid #426746;
+}
 
+.sidebar .nav>.active:focus>a,
+.sidebar .nav>.active:hover>a,
+.sidebar .nav>.active>a {
+    padding-left: 18px;
+    font-weight: 700;
+    color: #426746;;
+    background-color: transparent;
+    border-left: 2px solid #426746;
+}
+
+.sidebar .nav .nav {
+    display: none;
+    padding-bottom: 10px
+}
+
+.sidebar .nav .nav>li>a {
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 30px;
+    font-size: 12px;
+    font-weight: 400
+}
+
+.sidebar .nav .nav>li>a:focus,
+.sidebar .nav .nav>li>a:hover {
+    padding-left: 29px
+}
+
+.sidebar .nav .nav>.active:focus>a,
+.sidebar .nav .nav>.active:hover>a,
+.sidebar .nav .nav>.active>a {
+    padding-left: 28px;
+    font-weight: 500
+}
+
+.back-to-top,
+.theme-toggle {
+    display: none;
+    padding: 4px 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #999
+}
+
+.back-to-top:hover,
+.theme-toggle:hover {
+    color: #426746;;
+    text-decoration: none
+}
+
+.theme-toggle {
+    margin-top: 0
+}
+
+@media (min-width:768px) {
+    .back-to-top,
+    .theme-toggle {
+        display: block
+    }
+}
+
+@media (min-width:992px) {
+    .sidebar .nav>.active>ul {
+        display: block
+    }
+    .sidebar.affix {
+        position: fixed;
+        top: 95px
+    }
+    .sidebar.affix-bottom {
+        position: absolute
+    }
+    .sidebar.affix .sidenav,
+    .sidebar.affix-bottom .sidenav {
+        margin-top: 0;
+        margin-bottom: 0
+    }
+}
+
+@media (min-width:1200px) {
+    /*.sidebar.affix,
+    .sidebar.affix-bottom {
+        width: 263px
+    }*/
+}
