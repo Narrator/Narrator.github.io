@@ -25,6 +25,7 @@ body {
   color: #5a5a5a;
   padding-top:160px;
   font-family: 'Raleway', sans-serif;
+  position: relative;
 }
 
 h2 {
